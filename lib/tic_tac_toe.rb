@@ -22,7 +22,7 @@ def input_to_index(user_input)
 user_input.to_i - 1
 end
 
-def move(array, index, turn(board))
+def move(array, index, value = turn(board))
   array[index] = value
 end
 
@@ -70,8 +70,8 @@ end
 
 def current_player(board)
  if turn_count(board).even?
-   puts "X"
- else puts "O"
+   return "X"
+ else return "O"
  end
 end
 
