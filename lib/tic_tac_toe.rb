@@ -128,10 +128,10 @@ def winner(board)
     position_3 = board[win_index_3]
 if !won?(board) || draw?(board)
     return nil
-  elsif won?(board) && board[win_index_2] == "O"
-    return "O"
-  elsif won?(board) && board[win_index_1] == "X"
+  elsif won?(board) && board[win_index_2] == "X"
     return "X"
+  elsif won?(board) && board[win_index_1] == "O"
+    return "O"
     end
   end
 end
